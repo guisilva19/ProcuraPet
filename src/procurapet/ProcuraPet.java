@@ -1,20 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package procurapet;
 
-/**
- *
- * @author 2003s
- */
 public class ProcuraPet {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Usuario usuario = new Usuario("Igor", "teste@teste.com", "Lorem Ipsum", "https", "12345", "779911111");
+
+        System.out.println("Informações sobre o usuario criado");
+        System.out.println("Nome do usuario: " + usuario.nome);
+        System.out.println("Email do usuario: " + usuario.email);
+        System.out.println("Endereco do usuario: " + usuario.endereco);
+        System.out.println("Imagem do usuario: " + usuario.imagem);
+        System.out.println("Telefone do usuario: " + usuario.telefone);
     }
-    
+
 }
