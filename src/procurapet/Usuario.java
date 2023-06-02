@@ -30,7 +30,7 @@ public class Usuario {
     };
     
     public void setEmail(String novoEmail) {
-        email = email;
+        email = novoEmail;
     };
     
     public String getEndereco() {
