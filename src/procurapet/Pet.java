@@ -75,4 +75,23 @@ public class Pet {
     public void setContatoDoDono(String novoContato) {
         contato_do_dono = novoContato;
     }
+    
+    public String[] listar_pet() {
+        String[] lista_pets = {"teste"}; 
+        return lista_pets;
+    }
+    
+    public String contatar_dono() {
+        return contato_do_dono;
+    }
+    
+    public void editar_pet(String nome_pet, String cor_pet, String nome_do_dono_pet, String ultima_localizacao_pet, String raca_pet, String imagem_pet, String contato_do_dono_pet) {
+        nome = nome_pet;
+        cor = cor_pet;
+        nome_do_dono = nome_do_dono_pet;
+        ultima_localizacao = ultima_localizacao_pet;
+        raca = raca_pet;
+        imagem = imagem_pet;
+        contato_do_dono = contato_do_dono_pet;
+    }
 }
