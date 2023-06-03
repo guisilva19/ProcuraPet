@@ -61,4 +61,17 @@ public class Usuario {
         telefone = novoTelefone;
     };
     
+    public Boolean login(String inputEmail, String inputSenha) {
+        if(inputEmail == email && inputSenha == senha) return true;
+        
+        return false;
+    }
+    
+    public Pet cadastrarPet(String nome, String cor, String nome_do_dono, String ultima_localizacao, String raca, String imagem, String contato_do_dono) {
+        Pet pet = new Pet(nome, cor, nome_do_dono, ultima_localizacao, raca, imagem, contato_do_dono);
+        
+        return pet;
+    }
+
+    
 }
