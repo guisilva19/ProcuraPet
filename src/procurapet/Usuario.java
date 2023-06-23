@@ -1,8 +1,8 @@
 package procurapet;
 
 public class Usuario {
-    protected String nome;
-    protected String email;
+    public String nome;
+    public String email;
     protected String endereco;
     protected String imagem;
     private String senha;

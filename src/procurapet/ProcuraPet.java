@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ProcuraPet {
 
     public static void main(String[] args) throws SQLException {
-        Usuario usuario = new Usuario("Igor", "teste@teste.com", "Lorem Ipsum", "https", "12345", "779911111");;
+        Usuario usuario = new Usuario("Igor", "teste@teste.com", "Lorem Ipsum", "https", "12345", "779911111");
         Pet pet = usuario.cadastrarPet("Kaua", "preto", "Alvinio", "Riacho de Santana", "pinscher", "teste", "12345");
 
         System.out.println("Informações sobre o usuario criado");
@@ -27,8 +27,8 @@ public class ProcuraPet {
         System.out.println("Raca: " + pet.raca);
         System.out.println("Imagem: " + pet.imagem);
 
-        Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/procurapet?zeroDateTimeBehavior=CONVERT_TO_NULL", "root", "");
-        conexao.close();
+//        Connection conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=CONVERT_TO_NULL", "root", "");;
+//        conexao.close
     }
 
 }
